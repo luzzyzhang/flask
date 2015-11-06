@@ -244,6 +244,7 @@ def register():
 
 
 @app.route('/logout')
+@app.route('/logout/')
 def logout():
     """Logs the user out."""
     flash('You were logged out')
@@ -254,4 +255,3 @@ def logout():
 # add some filters to jinja
 app.jinja_env.filters['datetimeformat'] = format_datetime
 app.jinja_env.filters['gravatar'] = gravatar_url
-# luzzyzhang
