@@ -244,7 +244,6 @@ def register():
 
 
 @app.route('/logout')
-@app.route('/logout/')
 def logout():
     """Logs the user out."""
     flash('You were logged out')
